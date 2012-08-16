@@ -5,11 +5,11 @@ gem 'rails', '3.0.1'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-for :development, :test do
+group :development, :test do
     gem 'sqlite3-ruby', :require => 'sqlite3'
 end
-for :production, :staging do
-    gme 'pg', '0.12.0'
+group :production, :staging do
+    gem 'pg', '0.12.0'
 end
 
 # Use unicorn as the web server
